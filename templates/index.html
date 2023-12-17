@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<h2 class="text-center py-4">Mes Taches</h2>
+
+{% if tasks %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Taches</th>
+            <th>Description</th>
+            <th>Date de creation</th>
+            <th>Modification</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <th><a href="/update/{{task.id}}">{{ task.name }}</a></th>
+            <th>{{ task.description }}</th>
+            <th>{{ task.createdAt }}</th>
+            <th>{{ task.updatedAt }}</th>
+            <th>
+                <a href="/delete/{{task.id}}" class="btn btn-danger">Supprimer</a>
+            </th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Pas de choses a faire...</p>
+{% endif %}
+
+{% include "partials/_form.html" %}
+
+{% endblock content%}

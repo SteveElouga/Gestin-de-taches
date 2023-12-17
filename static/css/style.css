@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(205, 218, 218);
+}
+
+.custom-width{
+    width: 55%;
+}
+.custom-width-desc{
+    margin-top: 20px;
+    height: 200px;
+}
+.containe{
+    width: 80%;
+}
+.add{
+    margin-top: 20px;
+    width: 50%;
+}
+.contain{
+    margin-top: 50px;
+}
+.tache{
+    font-weight: 500;
+    margin-bottom: 10px;
+}

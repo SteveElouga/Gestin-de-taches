@@ -1,0 +1,16 @@
+# Fichiers générés par Pipenv
+Pipfile
+Pipfile.lock
+
+# Fichier d'environnement local
+.env
+
+# Dossier virtuel
+venv/
+
+# Fichiers et dossiers générés par Python
+__pycache__/
+*.pyc
+
+# Dossiers de migrations pour les bases de données
+migrations/
